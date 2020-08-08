@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<h2 id="status">0</h2>
+	<title></title>
+</head>
+<body>
+<script>
+function Car() {
+	this.speed = 0;
+	var int = setInterval(() => {
+		this.speed++;
+		document.getElementById("status").innerHTML = this.speed;
+	} , 200) ;
+	setTimeout(() =>{
+		clearInterval(int)
+	}, 6000)
+}
+var car1 = new Car()
+</script>
+</body>
+</html>
+
+
+
+
+ 
